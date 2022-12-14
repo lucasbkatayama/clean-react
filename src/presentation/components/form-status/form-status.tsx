@@ -1,10 +1,8 @@
 import React from 'react'
-import Spinner from '../spinner/spinner'
+import { Spinner } from '@/presentation/components'
 import Styles from './form-status.styles.scss'
 
-type Props = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
-
-const FormStatus: React.FC<Props> = (props: Props) => {
+const FormStatus: React.FC = () => {
   return (
     <div className={Styles.errorWrap}>
       <Spinner className={Styles.spinner} />
