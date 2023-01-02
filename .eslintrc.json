@@ -16,6 +16,7 @@
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
     "react/prop-types": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error"
