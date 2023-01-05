@@ -1,18 +1,17 @@
 import React from 'react'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-const router = createBrowserRouter([
-  {
-    path: '/login',
-    element: <></>
-  }
-])
+type Props = {
+  MakeLogin: React.FC
+}
 
-const Router: React.FC = () => {
+const Router: React.FC<Props> = ({ MakeLogin }: Props) => {
   return (
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path='login' element={<MakeLogin />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
